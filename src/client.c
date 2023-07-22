@@ -2,7 +2,7 @@
 
 static void err(void)
 {
-    printf("error occurred!!!!\n");
+    ft_printf("error occurred!!!!\n");
     exit(EXIT_FAILURE);
 }
 static int controller (char *av)
@@ -24,7 +24,7 @@ static void send_str(char *pid, char *str)
     int j;
 
     i = 0;
-    p = atoi(pid);
+    p = ft_atoi(pid);
     while(str[i])
     {
         j = 0;

@@ -28,7 +28,7 @@ void handle(int signum)
 
 int main()
 {
-    printf("%d\n",getpid());
+    ft_printf("%d\n",getpid());
    /* sigset_t x;
     sigemptyset(&x);
     sigaddset(&x, SIGUSR1);
@@ -42,7 +42,7 @@ int main()
     if (sigaction(SIGUSR1, &sig, NULL) == -1)
         perror("failed");
     
-    printf("%d",getpid());
+    ft_printf("%d",getpid());
     while (1)*/
     
     signal(SIGUSR1, handle);
